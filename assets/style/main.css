@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url("../../images/modern-3d-black-paper-style-background.png");
+    padding: 20px;
+}
+
+.left-section, .right-section {
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    max-width: 795px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.452);
+    border-right: 1px solid rgba(248, 240, 240, 0.411);
+    margin: 0 auto;
+}
+
+.card-top {
+    width: 100%;
+    max-width: 795px;
+    background: rgba(128, 128, 128, 0.301);
+    border-right: 1px solid white;
+    padding: 30px;
+    position: relative;
+    margin: -380px auto 0;
+    z-index: 1;
+    height: 360px;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.right-section {
+    margin-top: 50px;
+}
+
+.background-image {
+    width: 100%;
+    max-width: 752px;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1003px;
+    height: 200px;
+    margin: 35px auto;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    width: 15px;
+    height: 15px;
+    background: white;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.nav-btn.active {
+    background: yellow;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .main-section {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .left-section {
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .right-section {
+        width: 60%;
+        height: 100vh;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        height: 472px;
+    }
+
+    .card-top {
+        width: 100%;
+        height: 413px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 5%;
+    }
+
+    .title {
+        font-size: 48px;
+        width: 518px;
+        font-family: bold, sans-serif;
+      
+    }
+
+    .paragraph {
+        font-size: 16px;
+        width: 644px;
+        position: static;
+        font-family: lighter sans-serif font;
+    }
+
+    .carousel-container {
+        width: 1003px;
+        height: 386px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+
+    .carousel-nav {
+        position: absolute;
+        right: 275px;
+        top: 730px;
+        transform: none;
+    }
+}
+
+/* Keep original animations */
+.border_animated_button {
+position: relative;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 150px;
+height: 30px;
+padding: 12px 25px;
+border-radius: 50px;
+cursor: pointer;
+
+color: white;
+
+}
+
+.border_animated_button div {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #353535; /* Change Background Color */
+border-radius: 50px;
+width: 98%;
+height: 92%;
+z-index: 999;
+}
+
+.border_animated_button::before {
+content: '';
+background-color: yellow; /* Change Border Color */
+position: absolute;
+top: -95%;
+right: -25px;
+height: 100%;
+width: 100%;
+}
+
+.border_animated_button:hover::before {
+animation: allBorder .6s ease-in-out forwards;
+}
+
+@keyframes allBorder {
+0% {
+    top: -95%;
+    right: -20px;
+}
+
+40% {
+    top: 0;
+    right: -90%;
+}
+
+50% {
+    top: 0;
+    right: -60%;
+}
+
+75% {
+    top: 0;
+    right: -20%;
+}
+
+100% {
+    top: 0;
+    right: 0;
+}
+}
+
+.border_animated_button::after {
+content: '';
+background-color: yellow; /* Change Border Color */
+position: absolute;
+bottom: -47%;
+left: -25px;
+height: 50%;
+width: 100%;
+}
+
+
+.border_animated_button:hover::after {
+animation: moveUp .2s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+0% {
+    bottom: -47%;
+    left: -25px;
+}
+
+25% {
+    bottom: 0;
+    left: -50%;
+}
+
+100% {
+    bottom: 96%;
+    left: 0;
+}
+}

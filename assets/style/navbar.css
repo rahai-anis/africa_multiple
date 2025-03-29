@@ -1,0 +1,58 @@
+.fade-up {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.fade-up span {
+    display: inline-block;
+    transition: all 0.25s ease;
+}
+
+.fade-up::after {
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    color: #FFDD00;
+    transition: all 0.25s ease;
+    opacity: 0;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.fade-up:hover span {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.fade-up:hover::after {
+    top: 0;
+    opacity: 1;
+}
+
+/* Keep original yellow color for active link */
+.text-yellow span {
+    color: #FFDD00;
+}
+span{
+    font-size: 13px;
+    text-transform: capitalize;
+}
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: auto
+    }
+   
+}

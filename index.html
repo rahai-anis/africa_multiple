@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe XD Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.0/cdn.min.js" defer></script>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="assets/style/navbar.css">
+<link rel="stylesheet" href="assets/style/main.css">
+<script src="assets/js/main.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header x-data="{ open: false }" class="bg-black text-white p-4 flex justify-between items-center relative z-10">
+        <div class="text-lg font-bold" style="width: 30%;
+        display: flex;
+        justify-content: center;">
+            <img src="images/Groupe 32.png">
+        </div>
+        
+        <button @click="open = !open" class="md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    
+        <nav class="nav-items absolute left-0 top-full w-full bg-black md:static md:flex md:gap-6 flex justify-evenly"
+             :class="open ? 'flex flex-col' : 'hidden'" style ="z-index: 1;">
+            <ul class="flex flex-col md:flex-row gap-6 text-sm">
+                <li><a href="#" class="fade-up text-yellow" data-text="A PROPOS D'AFRICA MULTIPLE"><span>A PROPOS D'AFRICA MULTIPLE</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="COLLECTIONS MOSAIQUES VERRE"><span>COLLECTIONS MOSAIQUES VERRE</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="MOSAIC CREATOR"><span>MOSAIC CREATOR</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="CONCEPTION PERSONALISEE"><span>CONCEPTION PERSONALISEE</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="PROJETS"><span>PROJETS</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="ACTUALITES"><span>ACTUALITES</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="PROFESSIONNELS"><span>PROFESSIONNELS</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="TELECHARGEMENTS"><span>TELECHARGEMENTS</span></a></li>
+                <li><a href="#" class="fade-up text-white" data-text="CONTACT"><span>CONTACT</span></a></li>
+            </ul>
+            <div class="fade-up text-white" id="lg">FR</div>
+        </nav>
+       
+       
+    </header>
+    
+   
+    <section class="main-section">
+        <div class="left-section">
+            <div class="card"></div>
+            <div class="card-top">
+                <h1 class="title">AFRICA MULTIPLE</h1>
+                <p class="paragraph">
+                    AFRICA MULTIPLE sarl est une société créée en 1995 dans le cadre de l'importation multiple, 
+                    peu à peu on s'est spécialisé dans les carreaux de revêtements. Aujourd'hui notre gamme 
+                    de produits très large, répond à la demande de nos clients très exigeants.
+                </p>
+                <div class="border_animated_button">
+                    <div>VOIR PLUS</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="images/Tracé 1737.png" class="background-image" alt="Background">
+            <div class="carousel-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Groupe défilant 2.png" alt="Slide 1"></div>
+                        <div class="swiper-slide"><img src="images/Groupe défilant 2.png" alt="Slide 2"></div>
+                        <div class="swiper-slide"><img src="images/Groupe défilant 2.png" alt="Slide 3"></div>
+                        <div class="swiper-slide"><img src="images/Groupe défilant 2.png" alt="Slide 4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <div class="nav-btn" data-index="0"></div>
+                <div class="nav-btn" data-index="1"></div>
+                <div class="nav-btn" data-index="2"></div>
+                <div class="nav-btn" data-index="3"></div>
+            </div>
+        </div>
+    </section>
+  
+   
+  
+  
+</body>
+</html>
