@@ -19,7 +19,7 @@
     color: #FFDD00;
     transition: all 0.25s ease;
     opacity: 0;
-    font-size: 13px;
+   
     text-transform: capitalize;
 }
 
@@ -38,7 +38,7 @@
     color: #FFDD00;
 }
 span{
-    font-size: 13px;
+    
     text-transform: capitalize;
 }
 @media (max-width: 768px) {
@@ -60,9 +60,21 @@ span{
     #logo{
         width: 20%;
     }
+    .fade-up::after {
+        font-size: 8px;
+    }
+    span{
+         font-size: 8px;
+    }
 }
 @media (min-width: 1200px){
     #logo{
         width: 30%;
+    }
+    .fade-up::after {
+        font-size: 13px;
+    }
+    span{
+         font-size: 13px;
     }
 }
