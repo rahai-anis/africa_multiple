@@ -59,7 +59,7 @@
 
 .background-image {
     width: 100%;
-    max-width: 752px;
+   max-width: 80%;
     height: auto;
     display: block;
     position: absolute;
@@ -152,12 +152,13 @@
     }
 
     .carousel-container {
-        width: 1003px;
+        /*width: 1003px;*/
         height: 386px;
-        position: absolute;
+      /*  position: absolute;*/
         top: 50%;
         left: 50%;
         transform: translate(-50%, -60%);
+        max-width: 90%;
     }
 
     .carousel-nav {
