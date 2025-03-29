@@ -50,6 +50,7 @@
     color: white;
     line-height: 1.5;
     margin-bottom: 30px;
+    max-width: fit-content;
 }
 
 .right-section {
