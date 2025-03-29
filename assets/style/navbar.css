@@ -56,3 +56,13 @@ span{
     }
    
 }
+@media (min-width: 1024px){
+    #logo{
+        width: 20%;
+    }
+}
+@media (min-width: 1200px){
+    #logo{
+        width: 30%;
+    }
+}
