@@ -61,10 +61,10 @@ span{
         width: 20%;
     }
     .fade-up::after {
-        font-size: 8px;
+        font-size: 10px;
     }
     span{
-         font-size: 8px;
+         font-size: 10px;
     }
 }
 @media (min-width: 1300px){
