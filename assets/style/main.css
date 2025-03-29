@@ -162,7 +162,7 @@
        
         height: 386px;
         max-width: 90%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -55%);
     }
 
     .carousel-nav {
@@ -171,8 +171,28 @@
         top: 730px;
         transform: none;
     }
+    
 }
-
+@media (min-width: 1300px){
+    .background-image {
+ 
+    height: 50%;
+   
+}
+     .carousel-container {
+    
+      
+       position: absolute;
+        top: 50%;
+        left: 50%;
+        
+       
+        height: 386px;
+        max-width: 90%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
 /* Keep original animations */
 .border_animated_button {
 position: relative;
