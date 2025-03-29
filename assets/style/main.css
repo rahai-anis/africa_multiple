@@ -167,8 +167,8 @@
 
     .carousel-nav {
         position: absolute;
-        right: 275px;
-        top: 730px;
+         right: 35%;
+        top: 35%;
         transform: none;
     }
     
@@ -190,6 +190,12 @@
         height: 386px;
         max-width: 90%;
         transform: translate(-50%, -50%);
+    }
+     .carousel-nav {
+        
+       
+        top: 75%;
+      
     }
     
 }
